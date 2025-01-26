@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Satisfy&family=Varela&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  direction: rtl;
+}
+
+body {
+  background-image: url("project 4/images/Background.png  ");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+h1 {
+  font-family: "Assistant", sans-serif;
+  font: normal normal bold 86px/113px Assistant;
+  color: #d3e10e;
+  width: 868px;
+  height: 113px;
+  letter-spacing: 0px;
+  opacity: 1;
+  padding-top: 50%;
+  margin-bottom: 1%;
+}
+
+h4 {
+  font: normal normal normal 20px/26px Assistant;
+  font-size: 1rem;
+  color: white;
+  padding-top: 15%;
+  padding-bottom: 90px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  margin-top: 20%;
+}
+
+.form .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.form input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-bottom: 3px solid #d3e10e;
+  box-shadow: none;
+}
+
+.form label {
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+}
+
+.form button {
+  background-color: #d3e10e;
+  color: #000;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  align-self: center;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  body {
+    background-image: url("/images/Background.png ");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    padding-top: 10vh;
+    width: auto;
+    height: auto;
+  }
+
+  h4 {
+    font-size: 0.999rem;
+    padding-top: 2%;
+    padding-bottom: 10px;
+  }
+
+  .form {
+    flex-direction: column;
+    padding-top: 70vw;
+    bottom: 0px;
+  }
+
+  .form .input-group {
+    width: 90%;
+  }
+
+  .form label {
+    width: 90%;
+    text-align: right;
+    justify-content: right;
+  }
+
+  .form button {
+    margin-top: 20px;
+    width: 70%;
+    cursor: pointer;
+  }
+}

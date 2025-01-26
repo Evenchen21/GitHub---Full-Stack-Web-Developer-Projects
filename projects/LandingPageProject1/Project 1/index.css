@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+body {
+  direction: ltr;
+  margin: 0;
+  font-family: "Heebo", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.LeftSide {
+  width: 50%;
+  height: 100%;
+  background: url("images/CoffeeWallpaperBackground.png ") no-repeat center
+    center;
+  background-size: cover;
+}
+
+.RightSide {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+h1 {
+  top: 271px;
+  left: 1350px;
+  width: 400px;
+  height: 63px;
+  text-align: right;
+  font: normal normal 900 43px/63px Heebo;
+  letter-spacing: 0px;
+  color: #020253;
+  opacity: 1;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.FormArea {
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 1rem;
+  background: #e5eeff 0% 0% no-repeat padding-box;
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  border-bottom: 2px solid #020253;
+  background-color: #cbdcfc;
+}
+
+button {
+  width: 35%;
+  padding: 0.75rem;
+  background-color: #002d62;
+  color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  justify-content: right;
+}
+
+button:hover {
+  background-color: #004080;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    direction: ltr;
+  }
+
+  .LeftSide {
+    width: 100%;
+    height: 55%;
+  }
+
+  .RightSide {
+    padding: 1rem;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .FormArea {
+    width: 90%;
+  }
+
+  label {
+    display: block;
+    justify-content: center;
+    text-align: right;
+    right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+button {
+  justify-content: center;
+  text-align: center;
+}

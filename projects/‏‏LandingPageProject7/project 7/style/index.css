@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Press+Start+2P&family=Satisfy&family=Varela&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: ltr;
+}
+body {
+  justify-content: right;
+  text-align: right;
+  font-family: "Heebo";
+}
+
+.HeaderColor {
+  position: absolute;
+  width: 300px;
+  height: 10px;
+  right: 0;
+  top: 0;
+  background: #fdbd03;
+}
+
+.BoxWhatsapp {
+  border-radius: 55%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  justify-content: center;
+  justify-items: center;
+}
+
+.WhatsappImage {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 20px;
+  top: 20px;
+  background-color: #ffaa00;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.PhoneImage {
+  height: 800px;
+  width: auto;
+}
+
+.BoxPhone {
+  display: block;
+  height: 500px;
+  width: auto;
+  position: absolute;
+  right: 10%;
+}
+
+.BoxForm {
+  position: absolute;
+  left: 30%;
+  top: 200px;
+  transform: translateX(-50%);
+  height: auto;
+  width: auto;
+}
+
+.forme {
+  width: 900px;
+}
+
+.forme h1 {
+  color: #ffaa00;
+  opacity: 1;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding: 6px;
+  margin-bottom: 15px;
+  font: normal normal 900 40px/59px Heebo;
+}
+
+.forme h2 {
+  font-size: 18pt;
+  margin-bottom: 40px;
+  font: normal normal normal 15px/22px Heebo;
+}
+
+.forme label {
+  display: block;
+  font-weight: bold;
+  text-align: right;
+}
+
+.forme label[for="fullName"],
+.forme label[for="email"] {
+  display: block;
+  width: auto;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.forme input[type="text"],
+.forme input[type="email"] {
+  display: flex;
+  width: 400px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 1px;
+  background-color: #e5eeff;
+  border: none;
+  border-bottom: 2px solid #fdbd03;
+  display: inline-block;
+}
+
+.forme label[for="details"] {
+  padding: 5px;
+}
+
+.forme textarea {
+  justify-content: right;
+  text-align: right;
+  justify-items: right;
+  background-color: #e5eeff;
+  border: none;
+  border-bottom: 2px solid #fdbd03;
+  width: 400px;
+  height: 100px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+.forme input[type="button"] {
+  display: block;
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffaa00;
+  height: 30px;
+  width: 100px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  clear: both;
+  float: right;
+}
+
+.FooterIconsContactMe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 20px;
+  gap: 30px;
+}
+
+.FooterIconsContactMe img {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 35px;
+  background-color: #ffaa00;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.FooterColor {
+  position: absolute;
+  width: 600px;
+  height: 10px;
+  left: 0;
+  bottom: 0;
+  left: 0;
+  background: #fdbd03;
+}
+
+/* Responsive for Mobile Phone */
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .BoxPhone {
+    right: 50%;
+    transform: translateX(50%);
+    height: 300px;
+  }
+
+  .BoxPhone img {
+    justify-content: center;
+    justify-items: center;
+    height: 300px;
+  }
+
+  .BoxWhatsapp img {
+    display: none;
+  }
+  .WhatsappImage {
+    display: none;
+  }
+
+  .BoxForm {
+    left: 50%;
+    top: 150px;
+    transform: translateX(-50%);
+    width: 90%;
+    margin-bottom: 40vw;
+  }
+
+  .forme {
+    width: 100%;
+    margin-top: 50vw;
+    margin-bottom: 100vw; /*  */
+  }
+
+  .forme h1 {
+    text-align: center;
+    justify-content: center;
+  }
+  .forme h2 {
+    justify-content: center;
+    text-align: center;
+    font-weight: lighter;
+    color: #020253;
+  }
+
+  .forme input[type="text"],
+  .forme input[type="email"],
+  .forme textarea {
+    width: 100%;
+    margin-top: 1vw;
+  }
+  .forme input[type="button"] {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin-top: 1vw;
+  }
+
+  .FooterIconsContactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    top: 250vw;
+    bottom: 0;
+  }
+
+  .FooterIconsContactMe img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .FooterColor {
+    position: fixed;
+    width: 100%;
+  }
+}

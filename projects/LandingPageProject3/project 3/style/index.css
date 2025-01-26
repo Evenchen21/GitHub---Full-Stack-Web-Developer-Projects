@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Satisfy&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Satisfy&family=Varela&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  direction: rtl;
+}
+
+body {
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  background: transparent linear-gradient(180deg, #281eff 0%, #2dff8c 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.Box {
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  width: 0 auto;
+  height: 0 auto;
+  margin-top: 50%;
+}
+.HereNowText {
+  font-family: "satisfy" sans-serif;
+  top: 600px;
+  left: 582px;
+  width: 755px;
+  height: 204px;
+  text-align: left;
+  font: normal normal normal 160px/231px Satisfy;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-shadow: 1px 0px 80px #00000087;
+  opacity: 1;
+}
+
+.GiftText {
+  top: 551px;
+  width: 529px;
+  height: 38px;
+  text-align: right;
+  font: normal normal normal 32px/38px Varela Round;
+  font-family: "Varela" sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+h4 {
+  padding: 10px;
+  top: 607px;
+  left: 446px;
+  width: 1028px;
+  height: 60px;
+  text-align: center;
+  font-family: "Varela" sans-serif;
+  font: normal normal normal 16px/20px Varela Round;
+  letter-spacing: 0px;
+  color: #f9f9f9;
+  opacity: 1;
+}
+
+form {
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  font-family: "Varela" sans-serif;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  background: none;
+  border: 2px solid white;
+}
+
+.UpdateButton {
+  text-align: center;
+  font: normal normal normal 16px/20px Varela Round;
+  letter-spacing: 0px;
+  opacity: 1;
+  background-color: white;
+  width: 120px;
+  height: 30px;
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  border: none;
+  font-family: "Varela" sans-serif;
+}
+
+.UpdateButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .Box {
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+  }
+
+  .HereNowText {
+    font-size: 80px;
+    width: 100%;
+    height: auto;
+    top: 50px;
+  }
+
+  .GiftText {
+    font-size: 24px;
+    width: 100%;
+    height: auto;
+    top: 300px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 19px;
+    width: 100%;
+    height: auto;
+    top: 350px;
+    padding-bottom: 40px;
+  }
+
+  form {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+  }
+
+  form label {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 3px solid white;
+  }
+
+  .UpdateButton {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+}

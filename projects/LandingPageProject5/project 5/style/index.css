@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Satisfy&family=Varela&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Satisfy&family=Varela&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background-color: #e5eeff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e5eeff;
+}
+
+/* Grid Layout in HTML */
+.ImageBoxs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.ImageBoxs .image {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+.box {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.image9 {
+  grid-column: 4 / 3;
+  grid-row: 1/2;
+}
+.image10 {
+  grid-column: 5 / 4;
+  grid-row: 1/2;
+}
+.image6 {
+  grid-column: 4/3;
+  grid-row: 2/3;
+}
+.image11 {
+  grid-column: 5/4;
+  grid-row: 2/3;
+}
+.image2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.image5 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.image4 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.image3 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.image12 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.image14 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.image7 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.image13 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.image1 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.image8 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.FormBox {
+  grid-column: 3/5;
+  grid-row: 4/7;
+}
+
+.box {
+  background-color: #020253;
+  color: #0ee1da;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.box h2 {
+  margin: 80px;
+  font-size: 40px;
+  font-family: "Assistant";
+}
+
+.box p {
+  color: white;
+  font-family: "Assistant";
+  font-size: 17px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.FormBox {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #8e097c;
+  color: #0ee1da;
+}
+
+Form {
+  padding: 40px;
+}
+
+.FormBox h2 {
+  color: white;
+  margin-top: 30px;
+}
+
+.FormBox h2 {
+  margin-bottom: 20px;
+  font: normal normal bold 35px/46px Assistant;
+}
+
+.FormBox h3 {
+  color: white;
+  font-family: "Assistant";
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.FormBox input[type="text"],
+.FormBox input[type="email"],
+.FormBox textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #0ee1da;
+  border-bottom: 2px solid #0ee1da;
+}
+
+Form label {
+  display: block;
+  text-align: right;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-family: "Heebo";
+}
+
+.FormBox button {
+  background-color: #0ee1da;
+  color: black;
+  padding: 10px 130px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+/* Responsive Mode for Mobile Devices*/
+
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .ImageBoxs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ImageBoxs .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .box {
+    order: 1;
+    width: 100%;
+  }
+
+  .image9 {
+    order: 2;
+  }
+  .image10 {
+    order: 3;
+  }
+  .image6 {
+    order: 4;
+  }
+  .image11 {
+    order: 5;
+  }
+  .image2 {
+    order: 6;
+  }
+  .image5 {
+    order: 7;
+  }
+  .image4 {
+    order: 8;
+  }
+  .image3 {
+    order: 9;
+  }
+  .image12 {
+    order: 10;
+  }
+  .image14 {
+    order: 11;
+  }
+  .image7 {
+    order: 12;
+  }
+  .image13 {
+    order: 13;
+  }
+  .image1 {
+    order: 14;
+  }
+  .image8 {
+    order: 15;
+  }
+
+  .FormBox {
+    order: 16;
+    width: 100%;
+  }
+
+  .FormBox button {
+    width: 100%;
+    padding: 10px;
+  }
+}

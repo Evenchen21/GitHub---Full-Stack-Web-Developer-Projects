@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: ltr;
+}
+
+.headerContainer {
+  background-color: #0ee1e1;
+  color: black;
+  width: 0 auto;
+  height: 580px;
+  text-align: center;
+}
+
+.WhatsappBox {
+  top: 50px;
+  left: 50px;
+  position: absolute;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.IconWhatsapp {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headerContainer h1 {
+  padding-top: 200px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+}
+
+.headerContainer p {
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.imagebox {
+  position: absolute;
+  right: 250px;
+  top: 160px;
+  text-align: center;
+}
+.imagebox img {
+  height: 40%;
+  width: 40%;
+}
+
+.BoxsContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  gap: 10px;
+  height: 400px;
+}
+
+.Box {
+  width: 350px;
+  height: 320px;
+  background-color: #f8f8f8;
+  color: black;
+  border-radius: 1px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+.Box img {
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.Box p {
+  color: #0ee1e1;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.Box h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.FooterBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.footerLeft {
+  text-align: left;
+  background-color: #f0ffff;
+}
+
+.FooterForm {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.FooterForm form label,
+.FooterForm form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1px;
+  text-align: right;
+}
+
+.FooterForm form input {
+  padding: 10px;
+  border: none;
+  background-color: #e5eeff;
+}
+
+.FooterForm form textarea {
+  resize: none;
+  border: none;
+  width: 400px;
+  height: 50px;
+  border-bottom: 3px solid #0ee1e1;
+  background-color: #e5eeff;
+}
+
+.FooterForm form input[type="text"] {
+  border-bottom: 3px solid #0ee1e1;
+}
+
+.FooterForm form input[type="email"] {
+  border-bottom: 3px solid #0ee1e1;
+}
+
+.FooterForm form input[type="button"] {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #0ee1e1;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  width: 300px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+.FooterForm h2 {
+  font-weight: bold;
+  font-size: 18pt;
+  text-align: end;
+}
+
+.FooterForm p {
+  font-size: 11pt;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.FooterForm form {
+  display: block;
+}
+
+.FooterForm form label {
+  font-weight: bold;
+  font-size: 14pt;
+  padding: 10px;
+}
+
+.FooterRight {
+  background-color: #0ee1e1;
+  margin: 0 auto;
+  padding: 50px;
+  height: 100%;
+}
+
+.footerRight {
+  text-align: right;
+  background-color: #0ee1e1;
+  height: 600px;
+  width: 600px;
+}
+
+.FooterRight img {
+  height: 600px;
+  width: 600px;
+  background-color: #0ee1e1;
+}
+
+.ContactIcons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 0 auto;
+  height: 30px;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.ContactIcons img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 30px;
+  background-color: #0ee1e1;
+  padding: 10px;
+}
+.Border {
+  width: 0 auto;
+  background-color: #0ee1e1;
+  height: 30px;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .WhatsappBox {
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .headerContainer {
+    background-color: #0ee1e1;
+    color: black;
+    height: 100vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  .headerContainer h1 {
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  .headerContainer p {
+    font-size: 1em;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .imagebox {
+    position: absolute;
+    right: 15vw;
+    top: 25vw;
+    text-align: center;
+  }
+  .imagebox img {
+    height: 40%;
+    width: 40%;
+  }
+
+  .BoxsContainer {
+    display: block;
+    height: 60%;
+  }
+
+  .Box {
+    display: block;
+    width: 350px;
+    height: 320px;
+    background-color: #f8f8f8;
+    color: black;
+    border-radius: 1px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+  }
+
+  .FooterBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+
+  .FooterForm {
+    display: block;
+    padding-top: 30px;
+  }
+
+  .FooterRight {
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .FooterRight img {
+    width: 100%;
+    height: auto;
+  }
+}
