@@ -305,11 +305,9 @@ input[type="checkbox"] {
   resize: vertical;
 }
 
-.Form extarea {
+.Form textarea {
   resize: none;
   text-align: left;
-  width: 120px;
-  width: 50px;
 }
 
 .Form input[type="button"] {
