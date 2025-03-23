@@ -287,10 +287,10 @@ input[type="checkbox"] {
   text-align: left;
   margin-left: 100px;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 1px;
   left: 0;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .Form input[type="text"],
