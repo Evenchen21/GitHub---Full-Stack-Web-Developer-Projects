@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  color: white;
+  background: hsl(0, 0%, 0%);
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  box-shadow: 0 2px 4px hsl(0, 0%, 0%);
+}
+
+.card-body p-4 {
+  padding-top: 100px;
+}

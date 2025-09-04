@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Task Manager</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>My Task's Manager</h1>
+
+    <div>
+      <form onsubmit="addTask()">
+        <label for="taskDescription">Task : </label>
+
+        <input id="taskDescription" type="text" placeholder="Description" />
+
+        <label for="taskDueDate">Deadline: </label>
+
+        <input id="taskDueDate" type="date" />
+
+        <button type="submit">Add Task</button>
+      </form>
+    </div>
+
+    <div>
+      <button>All</button>
+      <button>Completed</button>
+      <button>Pending</button>
+    </div>
+    <div>
+      <button>Sort by Date</button>
+    </div>
+
+    <ul id="tasksList">
+      <li></li>
+    </ul>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch the Present's Game</title>
+    <!-- Guy Even Chen Project Preset Game -->
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        overflow: hidden;
+      }
+
+      #gameArea {
+        width: 600px;
+        height: 600px;
+        margin: 30px auto;
+        background-color: #e0f7fa;
+        position: relative;
+        border: 2px solid #333;
+        overflow: hidden;
+      }
+
+      #basket {
+        width: 100px;
+        height: 20px;
+        background-color: #ff7043;
+        position: absolute;
+        bottom: 0;
+        left: 250px; /* Move */
+        border-radius: 10px;
+      }
+
+      .present {
+        width: 30px;
+        height: 30px;
+        background-color: #4caf50;
+        position: absolute;
+        top: 0;
+        border-radius: 5px;
+      }
+
+      #score {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gameArea">
+      <div id="basket"></div>
+    </div>
+    <div id="score">Score: 0</div>
+    <br />
+    <script src="app.js"></script>
+  </body>
+</html>

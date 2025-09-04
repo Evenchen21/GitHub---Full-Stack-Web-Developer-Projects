@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <title>רשימת משימות</title>
+    <style>
+      body {
+        direction: rtl;
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+      }
+      input,
+      button {
+        padding: 10px;
+        font-size: 16px;
+        margin: 5px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        max-width: 400px;
+        margin: 20px auto;
+        text-align: right;
+      }
+      li {
+        background: white;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li.done {
+        text-decoration: line-through;
+        color: gray;
+      }
+      .remove-btn {
+        background: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>רשימת המשימות שלי</h1>
+    <input type="text" id="itemInput" placeholder="הוסף משימה" />
+    <button onclick="addItem()">הוסף</button>
+
+    <ul id="list"></ul>
+
+    <script>
+      function addItem() {
+        const input = document.getElementById("itemInput");
+        const text = input.value.trim();
+        if (text === "") return;
+
+        const li = document.createElement("li");
+        li.textContent = text;
+        li.onclick = () => li.classList.toggle("done");
+
+        const btn = document.createElement("button");
+        btn.textContent = "✖";
+        btn.className = "remove-btn";
+        btn.onclick = (e) => {
+          e.stopPropagation();
+          li.remove();
+        };
+
+        li.appendChild(btn);
+        document.getElementById("list").appendChild(li);
+        input.value = "";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-it Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar" > >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TechIt</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#products"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Branches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- -------------------- -->
+    <div class="div">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://media.istockphoto.com/id/641657932/photo/examining-new-laptop.jpg?s=612x612&w=is&k=20&c=iSo49Yg13mGata4q0q-Lite_Me9Pgb1gmv-OdE4YDFw=" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Tech-It store</h5>
+        <p>This is our best selling computer and technology store
+            <br />
+            <small>Check out our latest products!</small>
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://media.istockphoto.com/id/1576768900/photo/young-man-building-a-desktop-computer-in-a-workshop.jpg?s=612x612&w=is&k=20&c=K4MEb5FFsRzq-j-x5ysXm2Nr9cux7SRyYRTHLHXkCpc=" class="d-block w-100" alt="...">
+      
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Repair Services</h5>
+        <p>Professional Computer Technicians available 24/7 for any issue </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.istockphoto.com/id/185330865/photo/computer-room.jpg?s=612x612&w=is&k=20&c=pf8SliXvY48UnnpX-tLMQ5YZByoMZaqIssZuoBmbIi8=" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>PC store</h5>
+        <p>Best Deals on Computers and Accessories.
+            relevent to all your needs.</p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="alert alert-success" role="alert">
+  Check out our latest products and Deals !
+</div>
+    <!-- -------------------- -->
+<div class="container mt-5" id="products">
+  <h2 class="text-center mb-4">Check out our latest products</h2>
+  
+  <!-- Bootstrap Grid Layout -->
+  <div class="row g-4">
+    <!-- Product 1 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1674660529961-fd2fd2f3e025?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="storage 32GB XQD" style="height: 200px; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Sony Professional 32GB XQD</h5>
+          <p class="card-text text-muted">Storage</p>
+          <div class="mt-auto">
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#sonyModal">See more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Product 2 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Lenovo Legion 15.6 Gaming" style="height: 200px; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Lenovo Legion 15.6 Gaming</h5>
+          <p class="card-text text-muted">Laptops</p>
+          <div class="mt-auto">
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#lenovoModal">See more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Product 3 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"" class="card-img-top" alt="ASUS ROG GL552VW-DH71" style="height: 200px; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Macbook Air M4 14.0 Creative</h5>
+          <p class="card-text text-muted">Laptops</p>
+          <div class="mt-auto">
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#macbookModal">See more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+    </div>
+
+<!-- Bootstrap Modals -->
+<!-- Sony XQD Modal -->
+<div class="modal fade" id="sonyModal" tabindex="-1" aria-labelledby="sonyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sonyModalLabel">Sony Professional 32GB XQD</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1674660529961-fd2fd2f3e025?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid mb-3" alt="Sony Professional 32GB XQD">
+        <p><strong>Serial Number:</strong> 2536</p>
+        <p><strong>Category:</strong> Storage</p>
+        <p><strong>Description:</strong> The new XQD cards achieve Max read speeds of up to 4400MB/s and write speeds of up to 4000MB/s. Perfect for professional photography and videography.</p>
+        <h4 class="text-center mt-3"><strong>Price: $200</strong></h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lenovo Legion Modal -->
+<div class="modal fade" id="lenovoModal" tabindex="-1" aria-labelledby="lenovoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="lenovoModalLabel">Lenovo Legion 15.6 Gaming</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="img-fluid mb-3" alt="Lenovo Legion 15.6 Gaming">
+        <p><strong>Serial Number:</strong> LG156-2024</p>
+        <p><strong>Category:</strong> Laptops</p>
+        <p><strong>Description:</strong> High-performance gaming laptop with RGB keyboard, powerful graphics card, and excellent cooling system. Perfect for gaming and creative work.</p>
+        <h4 class="text-center mt-3"><strong>Price: $1,299</strong></h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MacBook Modal -->
+<div class="modal fade" id="macbookModal" tabindex="-1" aria-labelledby="macbookModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="macbookModalLabel">MacBook Air M4 14.0 Creative</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="img-fluid mb-3" alt="MacBook Air M4">
+        <p><strong>Serial Number:</strong> MBA-M4-2024</p>
+        <p><strong>Category:</strong> Laptops</p>
+        <p><strong>Description:</strong> Latest MacBook Air with M4 chip, stunning Retina display, and all-day battery life. Perfect for creative professionals and students.</p>
+        <h4 class="text-center mt-3"><strong>Price: $1,899</strong></h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ---------------------- -->
+     <br> <br><br> <br>
+
+<!-- Contact Form Section -->
+<div class="container mt-5 mb-5" id="contact">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-body p-4">
+          <h2 class="card-title text-center mb-4">Contact Us</h2>
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+            </div>
+            
+            <div class="mb-3">
+              <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+            </div>
+            
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email address" required>
+            </div>
+            
+            <div class="mb-3">
+              <textarea class="form-control" id="message" rows="5" placeholder="Share with us..." required></textarea>
+            </div>
+            
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+     
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
