@@ -86,6 +86,24 @@ async function fetchAPITasks() {
     console.error(error.message);
   }
 }
+function deleteButton() {
+  document.querySelectorAll(".deleteBtn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.id;
+      tasks.splice(id, 1);
+      setTasks(tasks);
+      renderTasks();
+    });
+  });
+}
+
+li.innerHTML = `
+  <span>${task.text} - ${task.dueDate}</span>
+  <span class="task-buttons">
+    <button data-id="${index}" class="complete-btn">✔️</button>
+    <button data-id="${index}" class="delete-btn">🗑️</button>
+  </span>
+`;
 
 async function initialize() {
   const LSTasks = getTasks();
